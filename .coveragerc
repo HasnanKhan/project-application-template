@@ -1,0 +1,18 @@
+[run]
+source = .
+omit =
+    tests/*
+    */site-packages/*
+    */lib/python*/*
+    get_issues.py
+    issues_analysis.py
+    example_analysis.py
+    run.py
+
+[report]
+include =
+    example_analysis.py
+    feature1_analysis.py
+    feature2_analysis.py
+    feature3_analysis.py
+    run.py
