@@ -9,6 +9,9 @@ import argparse
 
 import config
 from example_analysis import ExampleAnalysis
+from feature1_analysis import Feature1Analysis
+from feature2_analysis import Feature2Analysis
+from feature3_analysis import Feature3Analysis
 
 
 def parse_args():
@@ -48,10 +51,10 @@ config.overwrite_from_args(args)
 if args.feature == 0:
     ExampleAnalysis().run()
 elif args.feature == 1:
-    pass # TODO call first analysis
+    Feature1Analysis().run()
 elif args.feature == 2:
-    pass # TODO call second analysis
+    Feature2Analysis().run()
 elif args.feature == 3:
-    pass # TODO call third analysis
+    Feature3Analysis().run()
 else:
     print('Need to specify which feature to run with --feature flag.')
