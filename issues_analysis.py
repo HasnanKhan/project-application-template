@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-JSON_PATH = "poetry_issues.json"  # change this
+JSON_PATH = "poetry_issues.json"
 
 with open(JSON_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
